@@ -9,17 +9,21 @@ body {
 }
 
 h1 {
-  width: 100%;
-  text-align: center;
   font-family: "Molle", cursive;
   color: rgb(179, 37, 37);
   /* text-transform: uppercase; */
 }
 
+h1,
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
 .faq-set {
   margin: 0px auto;
+  width: 100%;
   max-width: 600px;
-  min-width: 265px;
 }
 
 .question {
@@ -48,25 +52,28 @@ strong {
 
 .answer {
   padding: 0px 10px;
+  font-size: 24px;
   background-color: rgba(255, 255, 255, 0.2);
   color: rgb(38, 114, 89);
-  /* border-bottom: 0px solid lightgray; */
   height: 0;
   overflow: hidden;
   transition: all 0.9s ease;
 }
 
-.open {
-  padding: 10px 10px;
-  height: 170px;
-  /* border-bottom: 1px solid rgb(12, 8, 8); */
+.answer p {
+  padding: 10px;
+  margin: 0;
 }
 
-@media (min-width: 500px) {
-  .open {
-    height: 100px;
-  }
+.open {
+  padding: 10px 10px;
 }
+
+/* @media (min-width: 500px) {
+  .open {
+    height: 150px;
+  }
+} */
 
 .opened {
   box-shadow: 0px 1px 1px gray;
